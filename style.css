@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background-color: rgb(216, 246, 133);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+#display-none {
+    display: none;
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+
+.top-line {
+    display: flex;
+    background-color: rgb(102, 220, 84);
+
+    color: rgb(102, 220, 84);
+    font-size: 10px;
+}
+
+.title-screen,
+.background-image {
+    z-index: -1;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title {
+    position: absolute;
+    color: rgb(216, 246, 133);
+    font-size: 5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.below-screen {
+    margin-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    height: 30vh;
+}
+
+.description {
+    color: rgb(78, 168, 64);
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.start-button {
+    width: 20vh;
+    border-radius: 5px;
+    border: none;
+    height: 7vh;
+    background-color: rgb(78, 168, 64);
+    font-size: 2rem;
+    color: rgb(216, 246, 133);
+    transition: 0.15s;
+}
+
+.start-button:hover {
+    background-color: rgb(64, 137, 53);
+    transform: translateX(2px);
+}
+
+.start-button:active {
+    background-color: rgb(51, 110, 42);
+    transform: translateX(1px);
+}
+
+.credits {
+    color: rgb(36, 79, 29);
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+
+.top-bar {
+    padding: 1vh;
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 88, 15, 0.754);
+}
+
+#searchbar {
+    width: 80vh;
+    height: 6vh;
+    border-radius: 60px;
+    border: none;
+}
+
+#searchbutton {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 100%;
+    border: none;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    width: 3.25vh;
+    height: 3.25vh;
+    opacity: 0.7;
+}
+
+#searchbutton:hover {
+    transform: translateX(1px);
+    background-color: rgb(224, 168, 95);
+}
+
+#title {
+    color: rgb(10, 93, 10);
+    text-align: center;
+    background-color: rgb(167, 219, 77);
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#modal {
+    display: none;
+}
+
+#modal.active {
+    display: block;
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(167, 219, 77);
+    left: 35%;
+    top: 30%;
+    overflow: scroll;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#close{
+    float:right;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+.image {
+    border-radius: 10px;
+    width: 40vh;
+    height: 40vh;
+}
+
+#dishname {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#searchdiv {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(203, 240, 102);
+    margin-bottom: 5vh
+}
+
+#searchresult {
+    font-size: 2rem;
+    background-color: rgb(38, 168, 62);
+    border-radius: 8px;
+    padding: 2px;
+    width: 40vh;
+    text-align: center;
+    color: rgb(203, 240, 102);
+    font-family: 'Roboto', sans-serif;
+}
+
+.food {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+}
+
+@media all and (min-width:280px) {
+    .title-screen {
+        display: flex;
+    }
+
+    .home-title {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .below-screen {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media all and (max-width:600px) {
+    
+
+    .active {
+        left: 10vw;
+    }
+}

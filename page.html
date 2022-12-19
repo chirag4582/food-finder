@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="top-line">d</div>
+    <div class="top-bar">
+        <input id="searchbar" placeholder="Search Categories" style="font-size: 1.5rem;padding-left: 30px;    font-family: 'Roboto', sans-serif;
+        " type="searchbar">
+        <button id="searchbutton">
+            <img class="search-icon" src="./search-icon.webp" alt="">
+        </button>
+    </div>
+    <h1 id="title">Today's Recommendation</h1>
+        <div id="container">
+        </div>
+        <div id="dishname"></div>
+        <div id="searchdiv">
+        </div>
+        <div id="categories">
+        </div>
+
+        <div id="modal">
+            <div id="close">X</div>
+            <h2>Ingredients</h2>
+            <div id="ingList">
+    
+            </div>
+        </div>
+    <script src="./app.js"></script>
+</body>
+</html>
